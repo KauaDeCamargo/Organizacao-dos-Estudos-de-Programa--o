@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #403D38;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+#cabecalho {
+    height: 60px;
+    background-color: #FF6000;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid;
+}
+
+#rodape {
+    height: 60px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: #FF6000;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: solid;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#btnCriarNovoProjeto {
+    width: 400px;
+    border-radius: 10px;
+    border: solid;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 4px;
+    margin-top: 10px;
+    font-size: large;
+    cursor: pointer;
+}
+
+#btnCriarNovoProjeto:hover {
+    background-color: #403D38;
+    color: #F8F7F3;
+    border-color: #F8F7F3;
+}
+
+#btnVerProjetos {
+    width: 400px;
+    border-radius: 10px;
+    border: solid;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 4px;
+    margin-top: 10px;
+    font-size: large;
+    cursor: pointer;
+}
+
+#btnVerProjetos:hover {
+    background-color: #403D38;
+    color: #F8F7F3;
+    border-color: #F8F7F3;
+}
+
+#caixaFormulario {
+    width: 1000px;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-color: #F8F7F3;
+}
+
+#caixaFormulario h1 {
+    text-align: center;
+}
+
+#formulario div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#formulario input, #formulario select {
+    outline: unset;
+    padding-left: 2px;
+    border: 1px solid;
+    border-radius: 7px;
+    font-size: medium;
+    height: 35px;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+#formulario #botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnCancelarNovoProjeto {
+    width: 400px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+#btnCancelarNovoProjeto:hover {
+    background-color: #403D38;
+    color: #F8F7F3;
+}
+
+#btnEnviarNovoProjeto {
+    width: 400px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+#btnEnviarNovoProjeto:hover {
+    background-color: #403D38;
+    color: #F8F7F3;
+}
+
+#caixaVerProjetos {
+    width: 1000px;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-color: #F8F7F3;
+}
+
+#caixaVerProjetos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    text-align: left;
+    padding: 1rem;
+}
+
+#btnFecharVerProjetos {
+    width: 400px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+#btnFecharVerProjetos:hover {
+    background-color: #403D38;
+    color: #F8F7F3;
+}
+
+@media only screen and (max-width: 480px){
+    #titulo {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #caixaPrincipal {
+        text-align: center;
+    }
+
+    #btnCriarNovoProjeto {
+        width: 80vw;
+    }
+
+    #btnVerProjetos {
+        width: 80vw;
+    }
+
+    #caixaFormulario {
+        width: 80vw;
+    }
+
+    #botoes button {
+        width: 80vw;
+    }
+
+    #caixaVerProjetos {
+        width: 80vw;
+    }
+
+    table, td, th {
+        font-size: small;
+        border: none;
+        padding: 0.75rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #caixaTabela {
+        overflow-x: auto;
+    }
+}

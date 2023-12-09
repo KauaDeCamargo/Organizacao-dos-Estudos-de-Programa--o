@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizando os Seus Estudos</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Roboto:wght@100;300;500;700&family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="cabecalho">
+        <h1 id="titulo">Organizando seus estudos de programação!</h1>
+    </header>
+
+    <main>
+        <section id="caixaPrincipal">
+            <div>
+                <button id="btnCriarNovoProjeto">Criar novo projeto</button>
+            </div>
+            <div>
+                <button id="btnVerProjetos">Ver projetos</button>
+            </div>
+        </section>
+
+        <section id="caixaFormulario" hidden>
+            <h1>Preencha os campos para salvar um novo projeto:</h1>
+            <form id="formulario">
+                <div id="inputNomeProjeto">
+                    <label for="nomeProjeto">Nome do Projeto:</label>
+                    <input type="text" name="nomeProjeto" id="nomeProjeto" required>
+                </div>
+                <div>
+                    <label for="prioridadeProjeto">Prioridade:</label>
+                    <select type="text" name="prioridadeProjeto" id="prioridadeProjeto" class="col2" required>
+                    <option selected value="">Escolha:</option>
+                    <option>Prioridade Baixa</option>
+                    <option>Prioridade Média</option>
+                    <option>Prioridade Alta</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="tipoProjeto">Tipo do Projeto:</label>
+                    <select type="text" name="tipoProjeto" id="tipoProjeto" required>
+                        <option selected value="">Escolha:</option>
+                        <option>Faculdade</option>
+                        <option>Curso</option>
+                        <option>Trabalho</option>
+                        <option>Projeto Pessoal</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="tecnologiaProjeto">Tecnologia do Projeto:</label>
+                    <input type="text" name="tecnologiaProjeto" id="tecnologiaProjeto" required>
+                </div>
+
+                <div>
+                    <label for="andamentoProjeto">Andamento do Projeto:</label>
+                    <select type="text" name="andamentoProjeto" id="andamentoProjeto" required>
+                        <option selected value="">Escolha:</option>
+                        <option>Projeto não iniciado</option>
+                        <option>No começo</option>
+                        <option>Em andamento</option>
+                        <option>Finalizado</option>
+                    </select>
+                </div>
+
+                <div id="botoes">
+                    <button type="button" id="btnCancelarNovoProjeto">Cancelar</button>
+                    <button type="button" id="btnEnviarNovoProjeto">Criar</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="caixaVerProjetos" hidden>
+            <div id="caixaTabela">
+                <table id="tabelaProjetos">
+                    <thead id="cabecalhoTabela">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Prioridade</th>
+                            <th>Tipo</th>
+                            <th>Tecnologia(s)</th>
+                            <th>Andamento</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabela">
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <button type="button" id="btnFecharVerProjetos">Fechar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <p>
+            Feito por Kauã de Camargo!
+        </p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
